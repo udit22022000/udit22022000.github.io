@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- the below link tag has been added for using animations from animate.css file -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+        />
+
+        <!-- this is for connecting with the css file with this html file.... -->
+        <link rel="stylesheet" type="text/css" href="main1.css">
+    </head>
+
+    <!-- the body has been divided into 3 parts 
+     1. header i.e navigation bar....it comprises of music player logo...search bar...account settings and notification bell...
+     2. main content i.e middle part contains 2 parts within it aside 1 and aside 2...aside one is all about latest release, mood, latest english and 
+     hindi songs and about artists and aside 2 contains playlist.... 
+     3. footer contains the play bar...it displays the song that we are playing presently...and some details about the song -->
+     
+    <body>
+        <!-- top navigation section of the page -->
+        <header class="nav-bar" >
+            <!-- music player logo and name -->
+            <div class="nv-icon-name">
+                <img class="nv-icon animate__animated animate__wobble animate__infinite	infinite" src="images/navigation/headphone-2.svg">
+                <div class="nv-name">Spotify</div>
+            </div>
+            <div class="nv-fav">Favourites</div>
+            <!-- music search bar -->
+            <div class="nv-search-bar">
+                <img class="nv-sb-icon-1" src="images/navigation/search.svg">
+                <img class="nv-sb-icon-2" src="images/navigation/voice-search.svg">
+                <input type="text" placeholder="Search..">
+            </div>
+            <!-- profile icon and notification bell -->
+            <div class="nv-bell-profile">
+                <img src="images/navigation/bell.svg">
+                <img src="images/navigation/profile.svg">
+            </div>
+        </header>
+
+
+        <!-- middle part .....middle part contains 2 parts within it aside 1 and aside 2 representing left side and right side respectively-->
+        <main class="main-content">
+            
+            <!-- left side section  of the middle part-->
+            <aside class="aside-1">
+
+                <!-- carausel-->
+                <div class="as-1-carousel">
+                    <!-- songs that are displayed in the carausel -->
+                    <img class="as-1-carousel-img1" src="images/carousel/1.jpg">
+                    <img class="as-1-carousel-img2" src="images/carousel/2.jpg">
+                    <img class="as-1-carousel-img3" src="images/carousel/3.jpg">
+                </div>
+
+                <!-- latest release section -->
+                <div class="as-1-release">
+
+                    <!-- heading of the latest release -->
+                    <div class="as-1-lpeh-heading">Latest Release</div>
+
+                    <!-- content within the latest release....this contains all the songs within the latest release section-->
+                    <div class="as-1-release-content">
+
+                        <!-- first song -->
+                        <div class="as-1-rc-song">
+
+                            <!-- play button ...that appears when u hover over the song icon -->
+                            <div class="as-1-rc-s-play-button"><img src="images/icons/play-1.svg" style="width:50%;"></div>
+    
+
+                            <!-- the song icon -->
+                            <img class="as-1-rc-s-icon" src="images/latest_release/1.jpg">
+
+
+                            <!-- details of the song -->
+                            <div class="as-1-rc-s-details">
+                                <div><b>Easy</b></div>
+                                <div>Aug 23,2020</div>
+                            </div>
+
+                            <!-- length of the song i.e time and dropdown icon-->
+                            <div class="as-1-rc-s-drop-time">
+
+                                <!-- label for the checkbox ....which is being for the dropdown menu that appears when we click over the label -->
+                                <label for="as-1-rc-s-dropdown-button-1"><img src="images/icons/dotted.svg" style="width:20px"></label>
+                                <input type="checkbox" class="as-1-rc-s-checkbox" id="as-1-rc-s-dropdown-button-1">
+
+                                <!-- dropdown menu....which appears when we click on the label -->
+                                <div class="as-1-rc-s-dropdown-menu">
+
+                                    <!-- play button within the dropdown menu -->
+                                    <div> 
+                                        <img src="images/icons/drop1.svg">
+                                        <span>Play Now</span>
+                                    </div>
+
+                                    <!-- add to queue button within dropdown -->
+                                    <div> 
+                                        <img src="images/icons/drop2.svg">
+                                        <span>Add to Queue</span>
+                                    </div>
+
+                                    <!-- add to favouites button within drop down -->
+                                    <div> 
+                                        <img src="images/icons/drop3.svg">
+                                        <span>Add to Favourites</span>
+                                    </div>
+
+                                    <!-- get info button within dropdown... -->
+                                    <div> 
+                                        <img src="images/icons/drop4.svg">
+                                        <span>Get Info</span>
+                                    </div>
+                                </div> 
+                                
+                                <!-- time that is being diplayed within the song bar -->
+                                <div class="as-1-rc-s-time">5:00</div>
+                            </div>
+                        </div>
+
+                        <!-- second song within the latest realease ....to see the inside explanation refer to the first song -->
+                        <div class="as-1-rc-song">
+                            <div class="as-1-rc-s-play-button"><img src="images/icons/play-1.svg" style="width:50%;"></div>
+                            <img class="as-1-rc-s-icon" src="images/latest_release/2.jpg">
+                            <div class="as-1-rc-s-details">
+                                <div><b>Midnight</b></div>
+                                <div>Aug 23,2020</div>
+                            </div>
+                            <div class="as-1-rc-s-drop-time">
+                                <label for="as-1-rc-s-dropdown-button-2"><img src="images/icons/dotted.svg" style="width:20px"></label>
+                                <input type="checkbox" class="as-1-rc-s-checkbox" id="as-1-rc-s-dropdown-button-2">
+                                <div class="as-1-rc-s-dropdown-menu">
+                                    <div> 
+                                        <img src="images/icons/drop1.svg">
+                                        <span>Play Now</span>
+                                    </div>
+                                    <div> 
+                                        <img src="images/icons/drop2.svg">
+                                        <span>Add to Queue</span>
+                                    </div>
+                                    <div> 
+                                        <img src="images/icons/drop3.svg">
+                                        <span>Add to Favourites</span>
+                                    </div>
+                                    <div> 
+                                        <img src="images/icons/drop4.svg">
+                                        <span>Get Info</span>
+                                    </div>
+                                </div>                              
+                                <div class="as-1-rc-s-time">5:00</div>
+                            </div>
+                        </div>
+
+                         <!-- third song within the latest realease ....to see the inside explanation refer to the first song -->
+                        <div class="as-1-rc-song">
+                            <div class="as-1-rc-s-play-button"><img src="images/icons/play-1.svg" style="width:50%;"></div>
+                            <img class="as-1-rc-s-icon" src="images/latest_release/3.jpg">
+                            <div class="as-1-rc-s-details">
+                                <div><b>Phoenix</b></div>
+                                <div>Aug 23,2020</div>
+                            </div>
+                            <div class="as-1-rc-s-drop-time">
+                                <label for="as-1-rc-s-dropdown-button-3"><img src="images/icons/dotted.svg" style="width:20px"></label>
+                                <input type="checkbox" class="as-1-rc-s-checkbox" id="as-1-rc-s-dropdown-button-3">
+                                <div class="as-1-rc-s-dropdown-menu">
+                                    <div> 
+                                        <img src="images/icons/drop1.svg">
+                                        <span>Play Now</span>
+                                    </div>
+                                    <div> 
+                                        <img src="images/icons/drop2.svg">
+                                        <span>Add to Queue</span>
+                                    </div>
+                                    <div> 
+                                        <img src="images/icons/drop3.svg">
+                                        <span>Add to Favourites</span>
+                                    </div>
+                                    <div> 
+                                        <img src="images/icons/drop4.svg">
+                                        <span>Get Info</span>
+                                    </div>
+                                </div>                              
+                                <div class="as-1-rc-s-time">5:00</div>
+                            </div>
+                        </div>
+
+                        <!-- fourth song within the latest realease ....to see the inside explanation refer to the first song -->
+                        <div class="as-1-rc-song">
+                            <div class="as-1-rc-s-play-button"><img src="images/icons/play-1.svg" style="width:50%;"></div>
+                            <img class="as-1-rc-s-icon" src="images/latest_release/4.jpg">
+                            <div class="as-1-rc-s-details">
+                                <div><b>Slowly</b></div>
+                                <div>Aug 23,2020</div>
+                            </div>
+                            <div class="as-1-rc-s-drop-time">
+                                <label for="as-1-rc-s-dropdown-button-4"><img src="images/icons/dotted.svg" style="width:20px"></label>
+                                <input type="checkbox" class="as-1-rc-s-checkbox" id="as-1-rc-s-dropdown-button-4">
+                                <div class="as-1-rc-s-dropdown-menu">
+                                    <div> 
+                                        <img src="images/icons/drop1.svg">
+                                        <span>Play Now</span>
+                                    </div>
+                                    <div> 
+                                        <img src="images/icons/drop2.svg">
+                                        <span>Add to Queue</span>
+                                    </div>
+                                    <div> 
+                                        <img src="images/icons/drop3.svg">
+                                        <span>Add to Favourites</span>
+                                    </div>
+                                    <div> 
+                                        <img src="images/icons/drop4.svg">
+                                        <span>Get Info</span>
+                                    </div>
+                                </div>                              
+                                <div class="as-1-rc-s-time">5:00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- popular artists section inside the aside one section -->
+                <div class="as-1-artists">
+
+                    <!-- heading of the popular artists -->
+                    <div class="as-1-lpeh-heading">Popular Artists</div>
+
+                    <!-- content of the popular artists -->
+                    <div class="as-1-artists-content">
+
+                        <!-- first artist -->
+                        <div class="as-1-artists-album">
+
+                            <!-- this div is for play button that appears when we hoover over the artist icon -->
+                            <div class="as-1-artists-album-button"><a href="page-2.html"><img src="images/icons/play-2.svg" style="width:50%;"></a></div>
+
+                            <!-- pic of the singer -->
+                            <img src="images/popular_artists/calvin.jpg">
+
+                            <!-- name of the singer -->
+                            <div><b>Calvin</b></div>
+                        </div>
+
+                        <!-- second artist ...to see the explanation refer to the first artist -->
+                        <div class="as-1-artists-album">
+                            <div class="as-1-artists-album-button"><a href="page-2.html"><img src="images/icons/play-2.svg" style="width:50%;"></a></div>
+                            <img src="images/popular_artists/david.jpg">
+                            <div><b>David</b></div>
+                        </div>
+
+                        <!-- third artist ...to see the explanation refer to the first artist -->
+                        <div class="as-1-artists-album">
+                            <div class="as-1-artists-album-button"><a href="page-2.html"><img src="images/icons/play-2.svg" style="width:50%;"></a></div>
+                            <img src="images/popular_artists/gurnam.jpg">
+                            <div><b>Gurnam</b></div>
+                        </div>
+
+                        <!-- fourth artist ...to see the explanation refer to the first artist -->
+                        <div class="as-1-artists-album">
+                            <div class="as-1-artists-album-button"><a href="page-2.html"><img src="images/icons/play-2.svg" style="width:50%;"></a></div>
+                            <img src="images/popular_artists/justin.jpg">
+                            <div><b>Justin Bieber</b></div>
+                        </div>
+
+                        <!-- fifth artist ...to see the explanation refer to the first artist -->
+                        <div class="as-1-artists-album">
+                            <div class="as-1-artists-album-button"><a href="page-2.html"><img src="images/icons/play-2.svg" style="width:50%;"></a></div>
+                            <img src="images/popular_artists/shreya.jpg">
+                            <div><b>Shreya Ghosal</b></div>
+                        </div>
+
+                        <!-- sixth artist ...to see the explanation refer to the first artist -->
+                        <div class="as-1-artists-album">
+                            <div class="as-1-artists-album-button"><a href="page-2.html"><img src="images/icons/play-2.svg" style="width:50%;"></a></div>
+                            <img src="images/popular_artists/sunidhi.jpg">
+                            <div><b>Sunidhi</b></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Radio station section -->
+                <div class="as-1-station">
+
+                    <!-- radio station icon -->
+                    <div class="as-1-station-icon">
+                        <div class="as-1-s-i-1"></div>
+                        <div class="as-1-s-i-2"></div>
+                        <div class="as-1-s-i-3"></div>
+                        <img class="as-1-s-i-4" src="images/navigation/headphone-3.svg">
+                        <div class="as-1-s-i-5">Stations</div>
+                    </div>
+
+                    <!-- radio station genres -->
+                    <div class="as-1-station-features">
+
+                        <!-- chill  genre-->
+                        <div class="as-1-sf-album">
+
+                            <!-- name of the genre -->
+                            <div>Chill</div>
+
+                            <!-- image of the genre -->
+                            <img src="images/stations/chill.jpg">
+                        </div>
+
+                        <!-- pop genre -->
+                        <div class="as-1-sf-album">
+                            <div>Pop</div>
+                            <img src="images/stations/pop.jpg">
+                        </div>
+
+                        <!-- workout genre -->
+                        <div class="as-1-sf-album">
+                            <div>Workout</div>
+                            <img src="images/stations/workout'.jpg">
+                        </div>
+
+                        <!-- Love genre -->
+                        <div class="as-1-sf-album">
+                            <div>Love</div>
+                            <img src="images/stations/love.jpg">
+                        </div>
+
+                        <!-- Retro genre -->
+                        <div class="as-1-sf-album">
+                            <div>Retro</div>
+                            <img src="images/stations/retro.jpg">
+                        </div>
+
+                        <!-- Rock genre -->
+                        <div class="as-1-sf-album">
+                            <div>Rock</div>
+                            <img src="images/stations/rock.jpg">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- situation related songs OR mood related songs  -->
+                <div class="as-1-mood">
+
+                    <!-- Party mode -->
+                    <div class="as-1-mood-module">
+
+                        <!-- album name -->
+                        <div class="as-1-mood-caption" style="background-color: orange; opacity: 0.5 ;">Party</div>
+
+                        <!-- album icon -->
+                        <img src="images/mood/party.jpg">
+                    </div>
+
+                    <!-- Electronic mode -->
+                    <div class="as-1-mood-module">
+                        <div class="as-1-mood-caption" style="background-color: blue; opacity: 0.5 ;">Electronic</div>
+                        <img src="images/mood/electronic.jpg">
+                    </div>
+
+                    <!-- Road trip mode -->
+                    <div class="as-1-mood-module">
+                        <div class="as-1-mood-caption" style="background-color: brown; opacity: 0.5 ;">Road Trip</div>
+                        <img src="images/mood/road_trip.jpg">
+                    </div>
+                </div>
+
+                <!--English songs -->
+                <div class="as-1-eng-hin">
+
+                    <!-- english song heading  -->
+                    <div class="as-1-lpeh-heading">Latest English</div>
+
+                    <!-- english song content -->
+                    <div class="as-1-e-h-content">
+
+                        <!-- first song -->
+                        <div class="as-1-e-h-song">
+
+                            <!-- image of the first song -->
+                            <img src="images/english/1.jpg">
+
+                            <!-- name of the song -->
+                            <div><b>Wolves</b></div>
+
+                            <!-- date of release -->
+                            <div>Aug 31,2020</div>
+                        </div>
+
+                        <!-- second song -->
+                        <div class="as-1-e-h-song">
+                            <img src="images/english/2.jpg">
+                            <div><b>Friends</b></div>
+                            <div>Aug 31,2020</div>
+                        </div>
+
+                        <!-- third song -->
+                        <div class="as-1-e-h-song">
+                            <img src="images/english/3.jpg">
+                            <div><b>On My Way</b></div>
+                            <div>Aug 31,2020</div>
+                        </div>
+
+                        <!-- fourth song -->
+                        <div class="as-1-e-h-song">
+                            <img src="images/english/4.jpg">
+                            <div><b>Sorry</b></div>
+                            <div>Aug 31,2020</div>
+                        </div>
+
+                        <!-- fifth song  -->
+                        <div class="as-1-e-h-song">
+                            <img src="images/english/5.jpg">
+                            <div><b>Perfect</b></div>
+                            <div>Aug 31,2020</div>
+                        </div>
+
+                        <!-- sixth song -->
+                        <div class="as-1-e-h-song">
+                            <img src="images/english/6.jpg">
+                            <div><b>Sugar</b></div>
+                            <div>Aug 31,2020</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HIndi songs section-->
+                <div class="as-1-eng-hin">
+
+                    <!-- section heading -->
+                    <div class="as-1-lpeh-heading">Latest Hindi</div>
+
+                    <!-- hindi section content -->
+                    <div class="as-1-e-h-content">
+
+                        <!-- first song -->
+                        <div class="as-1-e-h-song">
+
+                            <!-- song image -->
+                            <img src="images/hindi/1.jpg">
+
+                            <!-- song name -->
+                            <div><b>Aankh Marey</b></div>
+
+                            <!-- song release date -->
+                            <div>Aug 31,2020</div>
+                        </div>
+
+                        <!-- second song -->
+                        <div class="as-1-e-h-song">
+                            <img src="images/hindi/2.jpg">
+                            <div><b>Duniyaa</b></div>
+                            <div>Aug 31,2020</div>
+                        </div>
+
+                        <!-- third song -->
+                        <div class="as-1-e-h-song">
+                            <img src="images/hindi/3.jpg">
+                            <div><b>Bekhayali</b></div>
+                            <div>Aug 31,2020</div>
+                        </div>
+
+                        <!-- fourth song -->
+                        <div class="as-1-e-h-song">
+                            <img src="images/hindi/4.jpg">
+                            <div><b>Pal</b></div>
+                            <div>Aug 31,2020</div>
+                        </div>
+
+                        <!-- fifth song -->
+                        <div class="as-1-e-h-song">
+                            <img src="images/hindi/5.jpg">
+                            <div><b>Photo</b></div>
+                            <div>Aug 31,2020</div>
+                        </div>
+
+                        <!-- sixth song -->
+                        <div class="as-1-e-h-song">
+                            <img src="images/hindi/6.jpg">
+                            <div><b>Pachtaoge</b></div>
+                            <div>Aug 31,2020</div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- playlist button...it comes into picture when device pixel width becomes less than 1000px 
+            when device pixel is less than 1000px ...playlist section(Aside 2) appears only when we mark this checkbox as checked
+            means when we click on the playlist button....-->
+            <label for="as-2-button" class="aside-2-button">
+                <img src="images/icons/less-than.svg" style="width: 20px">
+                Playlist
+            </label>
+            <input type="checkbox" class="aside-2-button" id="as-2-button">
+
+            <!-- aside 2 ....containing the playlist-->
+            <aside class="aside-2">
+
+                <!-- heading of the playlist -->
+                <div class="as-2-heading">
+
+                    <!-- playlist heading -->
+                    <div class="as-2-heading-1">Playlist</div>
+
+                    <!-- dropdown Queue heading -->
+                    <div class="as-2-heading-2">
+
+                        <!-- dropdown appears when this label is clicked -->
+                        <label for="as-2-heading-2-checkbox">
+                            <span>Queue</span>
+                            <img class="as-2-heading-2-icon" src="images/icons/down-arrow.svg">
+                        </label>
+                        <input type="checkbox" id="as-2-heading-2-checkbox">
+
+                        <!-- dropdown menu ...this dropdown is visible only when label Queue is clicked-->
+                        <div class="as-2-heading-2-dropdown-menu">
+                            <div> 
+                                Playlist
+                            </div>
+                            <div> 
+                                Favourite Songs
+                            </div>
+                        </div>     
+                    </div>
+                </div>
+
+                <!-- content of the playlist part -->
+                <div class="as-2-content">
+
+                    <!-- first song -->
+                    <div class="as-2-song">
+
+                        <!-- serial num of the song -->
+                        <div class="as-2-song-sr-no"><b>01</b></div>
+
+                        <!-- song icon and play button-->
+                        <div class="as-2-song-images">
+
+                            <!-- play button that appears when hovered over the song container -->
+                            <div class="as-2-song-play-button"><img src="images/icons/play-1.svg" style="width:50%;"></div>
+
+                            <!-- song icon -->
+                            <img class="as-2-song-icon" src="images/playlist/1.jpg">
+                        </div>
+
+                        <!-- song and singer name -->
+                        <div class="as-2-song-details">
+                            <div><b>Midnight</b></div>
+                            <div>Katty</div>
+                        </div>
+
+                        <!-- heart icon for marking the song as favourite -->
+                        <img class="as-2-song-heart" src="images/icons/heart.svg" style="width:20px">
+                    </div>
+
+                    <!-- second song -->
+                    <div class="as-2-song">
+                        <div class="as-2-song-sr-no"><b>02</b></div>
+                        <div class="as-2-song-images">
+                            <div class="as-2-song-play-button"><img src="images/icons/play-1.svg" style="width:50%;"></div>
+                            <img class="as-2-song-icon" src="images/playlist/2.jpg">
+                        </div>
+                        <div class="as-2-song-details">
+                            <div><b>Midnight</b></div>
+                            <div>Katty</div>
+                        </div>
+                        <img class="as-2-song-heart" src="images/icons/heart.svg" style="width:20px">
+                    </div>
+
+                    <!-- third song -->
+                    <div class="as-2-song">
+                        <div class="as-2-song-sr-no"><b>03</b></div>
+                        <div class="as-2-song-images">
+                            <div class="as-2-song-play-button"><img src="images/icons/play-1.svg" style="width:50%;"></div>
+                            <img class="as-2-song-icon" src="images/playlist/3.jpg">
+                        </div>
+                        <div class="as-2-song-details">
+                            <div><b>Midnight</b></div>
+                            <div>Katty</div>
+                        </div>
+                        <img class="as-2-song-heart" src="images/icons/heart.svg" style="width:20px">
+                    </div>
+
+                    <!-- fourth song -->
+                    <div class="as-2-song">
+                        <div class="as-2-song-sr-no"><b>04</b></div>
+                        <div class="as-2-song-images">
+                            <div class="as-2-song-play-button"><img src="images/icons/play-1.svg" style="width:50%;"></div>
+                            <img class="as-2-song-icon" src="images/playlist/4.jpg">
+                        </div>
+                        <div class="as-2-song-details">
+                            <div><b>Midnight</b></div>
+                            <div>Katty</div>
+                        </div>
+                        <img class="as-2-song-heart" src="images/icons/heart.svg" style="width:20px">
+                    </div>
+
+                    <!-- fifth song -->
+                    <div class="as-2-song">
+                        <div class="as-2-song-sr-no"><b>05</b></div>
+                        <div class="as-2-song-images">
+                            <div class="as-2-song-play-button"><img src="images/icons/play-1.svg" style="width:50%;"></div>
+                            <img class="as-2-song-icon" src="images/playlist/5.jpg">
+                        </div>
+                        <div class="as-2-song-details">
+                            <div><b>Midnight</b></div>
+                            <div>Katty</div>
+                        </div>
+                        <img class="as-2-song-heart" src="images/icons/heart.svg" style="width:20px">
+                    </div>
+
+                    <!-- sixth song -->
+                    <div class="as-2-song">
+                        <div class="as-2-song-sr-no"><b>06</b></div>
+                        <div class="as-2-song-images">
+                            <div class="as-2-song-play-button"><img src="images/icons/play-1.svg" style="width:50%;"></div>
+                            <img class="as-2-song-icon" src="images/playlist/6.jpg">
+                        </div>
+                        <div class="as-2-song-details">
+                            <div><b>Midnight</b></div>
+                            <div>Katty</div>
+                        </div>
+                        <img class="as-2-song-heart" src="images/icons/heart.svg" style="width:20px">
+                    </div>
+
+                    <!-- seventh song -->
+                    <div class="as-2-song">
+                        <div class="as-2-song-sr-no"><b>07</b></div>
+                        <div class="as-2-song-images">
+                            <div class="as-2-song-play-button"><img src="images/icons/play-1.svg" style="width:50%;"></div>
+                            <img class="as-2-song-icon" src="images/playlist/7.jpg">
+                        </div>
+                        <div class="as-2-song-details">
+                            <div><b>Midnight</b></div>
+                            <div>Katty</div>
+                        </div>
+                        <img class="as-2-song-heart" src="images/icons/heart.svg" style="width:20px">
+                    </div>
+
+                    <!-- eighth song -->
+                    <div class="as-2-song">
+                        <div class="as-2-song-sr-no"><b>08</b></div>
+                        <div class="as-2-song-images">
+                            <div class="as-2-song-play-button"><img src="images/icons/play-1.svg" style="width:50%;"></div>
+                            <img class="as-2-song-icon" src="images/playlist/8.jpg">
+                        </div>
+                        <div class="as-2-song-details">
+                            <div><b>Midnight</b></div>
+                            <div>Katty</div>
+                        </div>
+                        <img class="as-2-song-heart" src="images/icons/heart.svg" style="width:20px">
+                    </div>
+
+                    <!-- nineth song -->
+                    <div class="as-2-song">
+                        <div class="as-2-song-sr-no"><b>09</b></div>
+                        <div class="as-2-song-images">
+                            <div class="as-2-song-play-button"><img src="images/icons/play-1.svg" style="width:50%;"></div>
+                            <img class="as-2-song-icon" src="images/playlist/9.jpg">
+                        </div>
+                        <div class="as-2-song-details">
+                            <div><b>Midnight</b></div>
+                            <div>Katty</div>
+                        </div>
+                        <img class="as-2-song-heart" src="images/icons/heart.svg" style="width:20px">
+                    </div>
+
+                    <!-- tenth song -->
+                    <div class="as-2-song">
+                        <div class="as-2-song-sr-no"><b>10</b></div>
+                        <div class="as-2-song-images">
+                            <div class="as-2-song-play-button"><img src="images/icons/play-1.svg" style="width:50%;"></div>
+                            <img class="as-2-song-icon" src="images/playlist/10.jpg">
+                        </div>
+                        <div class="as-2-song-details">
+                            <div><b>Midnight</b></div>
+                            <div>Katty</div>
+                        </div>
+                        <img class="as-2-song-heart" src="images/icons/heart.svg" style="width:20px">
+                    </div>
+
+                    <!-- eleventh song -->
+                    <div class="as-2-song">
+                        <div class="as-2-song-sr-no"><b>11</b></div>
+                        <div class="as-2-song-images">
+                            <div class="as-2-song-play-button"><img src="images/icons/play-1.svg" style="width:50%;"></div>
+                            <img class="as-2-song-icon" src="images/playlist/11.jpg">
+                        </div>
+                        <div class="as-2-song-details">
+                            <div><b>Midnight</b></div>
+                            <div>Katty</div>
+                        </div>
+                        <img class="as-2-song-heart" src="images/icons/heart.svg" style="width:20px">
+                    </div>
+
+                    <!-- tweleveth song -->
+                    <div class="as-2-song">
+                        <div class="as-2-song-sr-no"><b>12</b></div>
+                        <div class="as-2-song-images">
+                            <div class="as-2-song-play-button"><img src="images/icons/play-1.svg" style="width:50%;"></div>
+                            <img class="as-2-song-icon" src="images/playlist/12.jpg">
+                        </div>
+                        <div class="as-2-song-details">
+                            <div><b>Midnight</b></div>
+                            <div>Katty</div>
+                        </div>
+                        <img class="as-2-song-heart" src="images/icons/heart.svg" style="width:20px">
+                    </div>
+                </div>
+            </aside>
+        </main>
+        <!-- main part ends here -->
+
+        <!-- last part ....play bar starts here  -->
+        <footer class="play-bar">
+
+            <!-- song img and name -->
+            <div class="pb-img-name">
+
+                <!-- song image -->
+                <img class="pb-in-image" src="images/footer/play.jpg">
+
+                <!-- song details -->
+                <div class="pb-in-name"><b>Aankh Marey</b><br>Simmba</div>
+
+                <!-- icon to mark the song as favourite  -->
+                <div class="pb-in-heart">
+                    <img src="images/footer/heart.svg">
+                    <img src="images/footer/no-entry.svg">
+                </div>
+            </div>
+
+            <!-- pause button ....to pause the song and seek baar of the song  -->
+            <div class="pb-song-play">
+
+                <!-- pause.....next ....previous....suffle and repeat button  -->
+                <div class="pb-sp-icons">
+                    <img src="images/footer/shuffle.svg">
+                    <img src="images/footer/previous.svg">
+                    <img src="images/footer/pause.svg">
+                    <img src="images/footer/fast-forward.svg">
+                    <img src="images/footer/repeat-button.svg">
+                </div>
+
+                <!-- seek bar  -->
+                <div class="pb-sp-slider">
+                    <span>1:00</span>
+                    <input type="range" min = "0" max="100" value="0">
+                    <span>5:00</span>
+                </div>
+            </div>
+
+            <!-- zoom and sound controller -->
+            <div class="pb-song-play pb-playlist-zoom"  style="width: 20%">
+                <div class="pb-sp-icons" style="width: 100%">
+                    <img src="images/footer/playlist.svg">
+                    <img src="images/footer/laptop.svg">
+                    <img src="images/footer/diagonal-arrow.svg">
+                </div>
+
+                <!-- sound controller of the song -->
+                <div class="pb-sp-slider">
+                    <img src="images/footer/megaphone.svg" style="width: 20px">
+                    <input type="range" min = "0" max="100" value="0">
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

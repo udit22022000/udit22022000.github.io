@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- the below link tag has been added for using animations from animate.css file -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+        />
+
+        <!-- this is for connecting with the css file with this html file.... -->
+        <link rel="stylesheet" type="text/css" href="main2.css">
+    </head>
+
+    <!-- the body has been divided into 3 parts 
+     1. header i.e navigation bar....it comprises of music player logo...search bar...account settings and notification bell...
+     2. main content i.e middle part contains 2 parts within it aside 1 and aside 2...aside one is all about songs and deatils of that band
+     and aside 2 contains recently played songs and similar playlist.... 
+     3. footer contains the play bar...it displays the song that we are playing presently...and some details about the song -->
+     
+    <body>
+        <!-- top navigation section of the page -->
+        <header class="nav-bar" >
+            <!-- music player logo and name -->
+            <div class="nv-icon-name">
+                <img class="nv-icon animate__animated animate__wobble animate__infinite	infinite" src="images/navigation/headphone-2.svg">
+                <div class="nv-name">Spotify</div>
+            </div>
+            <div class="nv-fav">Favourites</div>
+            <!-- music search bar -->
+            <div class="nv-search-bar">
+                <img class="nv-sb-icon-1" src="images/navigation/search.svg">
+                <img class="nv-sb-icon-2" src="images/navigation/voice-search.svg">
+                <input type="text" placeholder="Search..">
+            </div>
+            <!-- profile icon and notification bell -->
+            <div class="nv-bell-profile">
+                <img src="images/navigation/bell.svg">
+                <img src="images/navigation/profile.svg">
+            </div>
+        </header>
+
+
+        <!-- middle part .....middle part contains 2 parts within it aside 1 and aside 2 representing left side and right side respectively-->
+        <main class="main-content">
+            
+            <!-- left side section  of the middle part    ASIDE-1-->
+            <aside class="aside-1">
+
+                <!-- this is band details section...it contains band pic and details about it -->
+               <div class="as-1-band-details">
+                    <div class="as-1-bd-icon-color"></div>
+
+                    <!-- band icon -->
+                    <img class="as-1-bd-icon" src="images/popular_artists/coldplay.jpg">
+
+                    <!-- band details -->
+                    <div class="as-1-bd-desc">
+                        <!-- band name -->
+                        <div class="as-1-bd-d-name">
+                            <div>
+                                <b>ColdPlay</b><br>
+                                British Band
+                            </div>
+
+                            <!-- No of followers -->
+                            <div>1000 Followers</div>
+                        </div>
+
+                        <!-- about band -->
+                        <div class="as-1-bd-d-details">
+                            Coldplay are a British rock band that were formed in London in 1996.Vocalist Chris Martin, bassist Guy Berryman, and drummer Will Champion met at University College London and began playing music together from 1996 to 1998, first calling themselves Pectoralz and then Starfish before finally changing their name to Coldplay.
+                        </div>
+
+                        <!-- Play all and follow buttons -->
+                        <div class="as-1-bd-d-buttons">
+                            <button style="background: linear-gradient(45deg, blue 10%, violet 75%, transparent);">Play All</button>
+                            <button>Follow</button>
+                        </div>
+
+                        <!-- num of tracks and albums -->
+                        <div class="as-1-bd-d-albums">248 Tracks|128 albums</div>
+                    </div>
+               </div>
+
+
+                <!-- first song -->
+                <div class="as-1-song">
+
+                    <!-- serial num of the song -->
+                    <div class="as-1-song-sr-no"><b>01</b></div>
+
+                    <!-- song icon and play button-->
+                    <div class="as-1-song-images">
+
+                        <!-- song icon -->
+                        <img class="as-1-song-icon" src="images/playlist/1.jpg">
+
+                    </div>
+
+                    <!-- song and singer name -->
+                    <div class="as-1-song-details">
+                        <div><b>Midnight</b></div>
+                        <div>Katty</div>
+                    </div>
+                    <!-- song duration -->
+                    <div class="as-1-song-details">5:00</div>
+
+
+                    <!-- icons for marking the song as favourite or adding it to the favourite-->
+                    <div class="as-1-song-heart-add">
+                        <img src="images/icons/heart.svg" style="width:20px">
+                        <img src="images/icons/drop2.svg" style="width:20px">
+                    </div>
+                 </div>
+
+                 <!-- second song -->
+                <div class="as-1-song">
+
+                    <!-- serial num of the song -->
+                    <div class="as-1-song-sr-no"><b>02</b></div>
+
+                    <!-- song icon and play button-->
+                    <div class="as-1-song-images">
+
+                        <!-- song icon -->
+                        <img class="as-1-song-icon" src="images/playlist/2.jpg">
+
+                    </div>
+
+                    <!-- song and singer name -->
+                    <div class="as-1-song-details">
+                        <div><b>Midnight</b></div>
+                        <div>Katty</div>
+                    </div>
+                    <!-- song duration -->
+                    <div class="as-1-song-details">5:00</div>
+
+
+                    <!-- icons for marking the song as favourite or adding it to the favourite-->
+                    <div class="as-1-song-heart-add">
+                        <img src="images/icons/heart.svg" style="width:20px">
+                        <img src="images/icons/drop2.svg" style="width:20px">
+                    </div>
+                 </div>
+
+                 <!-- third song -->
+                <div class="as-1-song">
+
+                    <!-- serial num of the song -->
+                    <div class="as-1-song-sr-no"><b>03</b></div>
+
+                    <!-- song icon and play button-->
+                    <div class="as-1-song-images">
+
+                        <!-- song icon -->
+                        <img class="as-1-song-icon" src="images/playlist/3.jpg">
+
+                    </div>
+
+                    <!-- song and singer name -->
+                    <div class="as-1-song-details">
+                        <div><b>Midnight</b></div>
+                        <div>Katty</div>
+                    </div>
+                    <!-- song duration -->
+                    <div class="as-1-song-details">5:00</div>
+
+
+                    <!-- icons for marking the song as favourite or adding it to the favourite-->
+                    <div class="as-1-song-heart-add">
+                        <img src="images/icons/heart.svg" style="width:20px">
+                        <img src="images/icons/drop2.svg" style="width:20px">
+                    </div>
+                 </div>
+                 
+                 <!-- fourth song -->
+                <div class="as-1-song">
+
+                    <!-- serial num of the song -->
+                    <div class="as-1-song-sr-no"><b>04</b></div>
+
+                    <!-- song icon and play button-->
+                    <div class="as-1-song-images">
+
+                        <!-- song icon -->
+                        <img class="as-1-song-icon" src="images/playlist/4.jpg">
+
+                    </div>
+
+                    <!-- song and singer name -->
+                    <div class="as-1-song-details">
+                        <div><b>Midnight</b></div>
+                        <div>Katty</div>
+                    </div>
+                    <!-- song duration -->
+                    <div class="as-1-song-details">5:00</div>
+
+
+                    <!-- icons for marking the song as favourite or adding it to the favourite-->
+                    <div class="as-1-song-heart-add">
+                        <img src="images/icons/heart.svg" style="width:20px">
+                        <img src="images/icons/drop2.svg" style="width:20px">
+                    </div>
+                 </div>
+
+                 <!-- fifth song -->
+                <div class="as-1-song">
+
+                    <!-- serial num of the song -->
+                    <div class="as-1-song-sr-no"><b>05</b></div>
+
+                    <!-- song icon and play button-->
+                    <div class="as-1-song-images">
+
+                        <!-- song icon -->
+                        <img class="as-1-song-icon" src="images/playlist/5.jpg">
+
+                    </div>
+
+                    <!-- song and singer name -->
+                    <div class="as-1-song-details">
+                        <div><b>Midnight</b></div>
+                        <div>Katty</div>
+                    </div>
+                    <!-- song duration -->
+                    <div class="as-1-song-details">5:00</div>
+
+
+                    <!-- icons for marking the song as favourite or adding it to the favourite-->
+                    <div class="as-1-song-heart-add">
+                        <img src="images/icons/heart.svg" style="width:20px">
+                        <img src="images/icons/drop2.svg" style="width:20px">
+                    </div>
+                 </div>
+
+                 <!-- sixth song -->
+                <div class="as-1-song">
+
+                    <!-- serial num of the song -->
+                    <div class="as-1-song-sr-no"><b>06</b></div>
+
+                    <!-- song icon and play button-->
+                    <div class="as-1-song-images">
+
+                        <!-- song icon -->
+                        <img class="as-1-song-icon" src="images/playlist/6.jpg">
+
+                    </div>
+
+                    <!-- song and singer name -->
+                    <div class="as-1-song-details">
+                        <div><b>Midnight</b></div>
+                        <div>Katty</div>
+                    </div>
+                    <!-- song duration -->
+                    <div class="as-1-song-details">5:00</div>
+
+
+                    <!-- icons for marking the song as favourite or adding it to the favourite-->
+                    <div class="as-1-song-heart-add">
+                        <img src="images/icons/heart.svg" style="width:20px">
+                        <img src="images/icons/drop2.svg" style="width:20px">
+                    </div>
+                 </div>
+
+                 <!-- seventh song -->
+                <div class="as-1-song">
+
+                    <!-- serial num of the song -->
+                    <div class="as-1-song-sr-no"><b>07</b></div>
+
+                    <!-- song icon and play button-->
+                    <div class="as-1-song-images">
+
+                        <!-- song icon -->
+                        <img class="as-1-song-icon" src="images/playlist/7.jpg">
+
+                    </div>
+
+                    <!-- song and singer name -->
+                    <div class="as-1-song-details">
+                        <div><b>Midnight</b></div>
+                        <div>Katty</div>
+                    </div>
+                    <!-- song duration -->
+                    <div class="as-1-song-details">5:00</div>
+
+
+                    <!-- icons for marking the song as favourite or adding it to the favourite-->
+                    <div class="as-1-song-heart-add">
+                        <img src="images/icons/heart.svg" style="width:20px">
+                        <img src="images/icons/drop2.svg" style="width:20px">
+                    </div>
+                 </div>
+
+
+                 <!-- Eighth song -->
+                <div class="as-1-song">
+
+                    <!-- serial num of the song -->
+                    <div class="as-1-song-sr-no"><b>08</b></div>
+
+                    <!-- song icon and play button-->
+                    <div class="as-1-song-images">
+
+                        <!-- song icon -->
+                        <img class="as-1-song-icon" src="images/playlist/8.jpg">
+
+                    </div>
+
+                    <!-- song and singer name -->
+                    <div class="as-1-song-details">
+                        <div><b>Midnight</b></div>
+                        <div>Katty</div>
+                    </div>
+                    <!-- song duration -->
+                    <div class="as-1-song-details">5:00</div>
+
+
+                    <!-- icons for marking the song as favourite or adding it to the favourite-->
+                    <div class="as-1-song-heart-add">
+                        <img src="images/icons/heart.svg" style="width:20px">
+                        <img src="images/icons/drop2.svg" style="width:20px">
+                    </div>
+                 </div>
+
+                 <!-- Ninth song -->
+                <div class="as-1-song">
+
+                    <!-- serial num of the song -->
+                    <div class="as-1-song-sr-no"><b>09</b></div>
+
+                    <!-- song icon and play button-->
+                    <div class="as-1-song-images">
+
+                        <!-- song icon -->
+                        <img class="as-1-song-icon" src="images/playlist/9.jpg">
+
+                    </div>
+
+                    <!-- song and singer name -->
+                    <div class="as-1-song-details">
+                        <div><b>Midnight</b></div>
+                        <div>Katty</div>
+                    </div>
+                    <!-- song duration -->
+                    <div class="as-1-song-details">5:00</div>
+
+
+                    <!-- icons for marking the song as favourite or adding it to the favourite-->
+                    <div class="as-1-song-heart-add">
+                        <img src="images/icons/heart.svg" style="width:20px">
+                        <img src="images/icons/drop2.svg" style="width:20px">
+                    </div>
+                 </div>
+
+                 <!-- tenth song -->
+                <div class="as-1-song">
+
+                    <!-- serial num of the song -->
+                    <div class="as-1-song-sr-no"><b>10</b></div>
+
+                    <!-- song icon and play button-->
+                    <div class="as-1-song-images">
+
+                        <!-- song icon -->
+                        <img class="as-1-song-icon" src="images/playlist/10.jpg">
+
+                    </div>
+
+                    <!-- song and singer name -->
+                    <div class="as-1-song-details">
+                        <div><b>Midnight</b></div>
+                        <div>Katty</div>
+                    </div>
+                    <!-- song duration -->
+                    <div class="as-1-song-details">5:00</div>
+
+
+                    <!-- icons for marking the song as favourite or adding it to the favourite-->
+                    <div class="as-1-song-heart-add">
+                        <img src="images/icons/heart.svg" style="width:20px">
+                        <img src="images/icons/drop2.svg" style="width:20px">
+                    </div>
+                 </div>
+
+                 <!-- eleventh song -->
+                <div class="as-1-song">
+
+                    <!-- serial num of the song -->
+                    <div class="as-1-song-sr-no"><b>11</b></div>
+
+                    <!-- song icon and play button-->
+                    <div class="as-1-song-images">
+
+                        <!-- song icon -->
+                        <img class="as-1-song-icon" src="images/playlist/11.jpg">
+
+                    </div>
+
+                    <!-- song and singer name -->
+                    <div class="as-1-song-details">
+                        <div><b>Midnight</b></div>
+                        <div>Katty</div>
+                    </div>
+                    <!-- song duration -->
+                    <div class="as-1-song-details">5:00</div>
+
+
+                    <!-- icons for marking the song as favourite or adding it to the favourite-->
+                    <div class="as-1-song-heart-add">
+                        <img src="images/icons/heart.svg" style="width:20px">
+                        <img src="images/icons/drop2.svg" style="width:20px">
+                    </div>
+                 </div>
+
+                 <!-- Twelveth song -->
+                <div class="as-1-song">
+
+                    <!-- serial num of the song -->
+                    <div class="as-1-song-sr-no"><b>12</b></div>
+
+                    <!-- song icon and play button-->
+                    <div class="as-1-song-images">
+
+                        <!-- song icon -->
+                        <img class="as-1-song-icon" src="images/playlist/12.jpg">
+
+                    </div>
+
+                    <!-- song and singer name -->
+                    <div class="as-1-song-details">
+                        <div><b>Midnight</b></div>
+                        <div>Katty</div>
+                    </div>
+                    <!-- song duration -->
+                    <div class="as-1-song-details">5:00</div>
+
+
+                    <!-- icons for marking the song as favourite or adding it to the favourite-->
+                    <div class="as-1-song-heart-add">
+                        <img src="images/icons/heart.svg" style="width:20px">
+                        <img src="images/icons/drop2.svg" style="width:20px">
+                    </div>
+                 </div>
+             </aside>
+
+            <!-- playlist button...it comes into picture when device pixel width becomes less than 1000px 
+            ...playlist section(Aside 2) appears only when we mark this checkbox as checked
+            means when we click on the playlist button....-->
+            <label for="as-2-button" class="aside-2-button">
+                <img src="images/icons/less-than.svg" style="width: 20px">
+                Playlist
+            </label>
+            <input type="checkbox" class="aside-2-button" id="as-2-button">
+
+            <!-- aside 2 ....containing the similar artists and recently played items-->
+            <aside class="aside-2">
+
+                <!-- similar artists section -->
+                <div class="as-2-sa">
+
+                    <!-- similar artists heading -->
+                    <div class="as-2-heading">
+                        <div>Similar Artists</div>
+                        <span>View All</span>
+                    </div>
+
+                    <!-- first song -->
+                    <div class="as-2-sa-song">
+
+                        <!-- play button ...that appears when u hover over the song icon -->
+                        <div class="as-2-sa-s-play-button"><img src="images/icons/play-1.svg" style="width:50%;"></div>
+
+
+                        <!-- the song icon -->
+                        <img class="as-2-sa-s-icon" src="images/latest_release/1.jpg">
+
+
+                        <!-- details of the song -->
+                        <div class="as-2-sa-s-details">
+                            <div><b>Twilight</b></div>
+                            <div>Saga</div>
+                        </div>
+
+                        <!-- length of the song i.e time and dropdown icon-->
+                        <div class="as-2-sa-s-drop-time">
+                            <img src="images/icons/dotted.svg" style="width:20px">
+                            <div>5:00</div>
+                        </div>
+                    </div>
+
+                    <!-- second song -->
+                    <div class="as-2-sa-song">
+
+                        <!-- play button ...that appears when u hover over the song icon -->
+                        <div class="as-2-sa-s-play-button"><img src="images/icons/play-1.svg" style="width:50%;"></div>
+
+
+                        <!-- the song icon -->
+                        <img class="as-2-sa-s-icon" src="images/latest_release/2.jpg">
+
+
+                        <!-- details of the song -->
+                        <div class="as-2-sa-s-details">
+                            <div><b>Twilight</b></div>
+                            <div>Saga</div>
+                        </div>
+
+                        <!-- length of the song i.e time and dropdown icon-->
+                        <div class="as-2-sa-s-drop-time">
+                            <img src="images/icons/dotted.svg" style="width:20px">
+                            <div>5:00</div>
+                        </div>
+                    </div>
+
+                    <!-- third song -->
+                    <div class="as-2-sa-song">
+
+                        <!-- play button ...that appears when u hover over the song icon -->
+                        <div class="as-2-sa-s-play-button"><img src="images/icons/play-1.svg" style="width:50%;"></div>
+
+
+                        <!-- the song icon -->
+                        <img class="as-2-sa-s-icon" src="images/latest_release/3.jpg">
+
+
+                        <!-- details of the song -->
+                        <div class="as-2-sa-s-details">
+                            <div><b>Twilight</b></div>
+                            <div>Saga</div>
+                        </div>
+
+                        <!-- length of the song i.e time and dropdown icon-->
+                        <div class="as-2-sa-s-drop-time">
+                            <img src="images/icons/dotted.svg" style="width:20px">
+                            <div>5:00</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- recently played section -->
+                <div class="as-2-rp">
+
+                    <!-- recently palyed heading -->
+                    <div class="as-2-heading">
+                        <div>Recently Played</div>
+                        <span>View All</span>
+                    </div>
+
+                    <!-- recently played songs -->
+                    <div class="as-2-rp-songs">
+
+                        <!-- first song -->
+                        <div class="as-2-rp-song">
+
+                            <!-- serial num of the song -->
+                            <div class="as-2-song-sr-no"><b>01</b></div>
+
+                            <!-- song icon and play button-->
+                            <div class="as-2-song-images">
+
+                                <!-- song icon -->
+                                <img class="as-2-song-icon" src="images/playlist/1.jpg">
+
+                            </div>
+
+                            <!-- song and singer name -->
+                            <div class="as-2-song-details">
+                                <div><b>Midnight</b></div>
+                                <div>Katty</div>
+                            </div>
+
+                            <!-- icons for marking the song as favourite or adding it to the favourite-->
+                            <div class="as-2-song-heart">
+                                <img src="images/icons/heart.svg" style="width:20px">
+                            </div>
+
+                        </div>
+
+                         <!-- second song -->
+                         <div class="as-2-rp-song">
+
+                            <!-- serial num of the song -->
+                            <div class="as-2-song-sr-no"><b>02</b></div>
+
+                            <!-- song icon and play button-->
+                            <div class="as-2-song-images">
+
+                                <!-- song icon -->
+                                <img class="as-2-song-icon" src="images/playlist/2.jpg">
+
+                            </div>
+
+                            <!-- song and singer name -->
+                            <div class="as-2-song-details">
+                                <div><b>Midnight</b></div>
+                                <div>Katty</div>
+                            </div>
+
+                            <!-- icons for marking the song as favourite or adding it to the favourite-->
+                            <div class="as-2-song-heart">
+                                <img src="images/icons/heart.svg" style="width:20px">
+                            </div>
+
+                        </div>
+
+                        <!-- third song -->
+                        <div class="as-2-rp-song">
+
+                            <!-- serial num of the song -->
+                            <div class="as-2-song-sr-no"><b>03</b></div>
+
+                            <!-- song icon and play button-->
+                            <div class="as-2-song-images">
+
+                                <!-- song icon -->
+                                <img class="as-2-song-icon" src="images/playlist/3.jpg">
+
+                            </div>
+
+                            <!-- song and singer name -->
+                            <div class="as-2-song-details">
+                                <div><b>Midnight</b></div>
+                                <div>Katty</div>
+                            </div>
+
+                            <!-- icons for marking the song as favourite or adding it to the favourite-->
+                            <div class="as-2-song-heart">
+                                <img src="images/icons/heart.svg" style="width:20px">
+                            </div>
+
+                        </div>
+
+                        <!-- fourth song -->
+                        <div class="as-2-rp-song">
+
+                            <!-- serial num of the song -->
+                            <div class="as-2-song-sr-no"><b>04</b></div>
+
+                            <!-- song icon and play button-->
+                            <div class="as-2-song-images">
+
+                                <!-- song icon -->
+                                <img class="as-2-song-icon" src="images/playlist/4.jpg">
+
+                            </div>
+
+                            <!-- song and singer name -->
+                            <div class="as-2-song-details">
+                                <div><b>Midnight</b></div>
+                                <div>Katty</div>
+                            </div>
+
+                            <!-- icons for marking the song as favourite or adding it to the favourite-->
+                            <div class="as-2-song-heart">
+                                <img src="images/icons/heart.svg" style="width:20px">
+                            </div>
+
+                        </div>
+
+                        <!-- fifth song -->
+                        <div class="as-2-rp-song">
+
+                            <!-- serial num of the song -->
+                            <div class="as-2-song-sr-no"><b>05</b></div>
+
+                            <!-- song icon and play button-->
+                            <div class="as-2-song-images">
+
+                                <!-- song icon -->
+                                <img class="as-2-song-icon" src="images/playlist/5.jpg">
+
+                            </div>
+
+                            <!-- song and singer name -->
+                            <div class="as-2-song-details">
+                                <div><b>Midnight</b></div>
+                                <div>Katty</div>
+                            </div>
+
+                            <!-- icons for marking the song as favourite or adding it to the favourite-->
+                            <div class="as-2-song-heart">
+                                <img src="images/icons/heart.svg" style="width:20px">
+                            </div>
+
+                        </div>
+
+                        <!-- sixth song -->
+                        <div class="as-2-rp-song">
+
+                            <!-- serial num of the song -->
+                            <div class="as-2-song-sr-no"><b>06</b></div>
+
+                            <!-- song icon and play button-->
+                            <div class="as-2-song-images">
+
+                                <!-- song icon -->
+                                <img class="as-2-song-icon" src="images/playlist/6.jpg">
+
+                            </div>
+
+                            <!-- song and singer name -->
+                            <div class="as-2-song-details">
+                                <div><b>Midnight</b></div>
+                                <div>Katty</div>
+                            </div>
+
+                            <!-- icons for marking the song as favourite or adding it to the favourite-->
+                            <div class="as-2-song-heart">
+                                <img src="images/icons/heart.svg" style="width:20px">
+                            </div>
+
+                        </div>
+
+
+                        <!-- seventh song -->
+                        <div class="as-2-rp-song">
+
+                            <!-- serial num of the song -->
+                            <div class="as-2-song-sr-no"><b>07</b></div>
+
+                            <!-- song icon and play button-->
+                            <div class="as-2-song-images">
+
+                                <!-- song icon -->
+                                <img class="as-2-song-icon" src="images/playlist/7.jpg">
+
+                            </div>
+
+                            <!-- song and singer name -->
+                            <div class="as-2-song-details">
+                                <div><b>Midnight</b></div>
+                                <div>Katty</div>
+                            </div>
+
+                            <!-- icons for marking the song as favourite or adding it to the favourite-->
+                            <div class="as-2-song-heart">
+                                <img src="images/icons/heart.svg" style="width:20px">
+                            </div>
+
+                        </div>
+
+
+                        <!-- eighth song -->
+                        <div class="as-2-rp-song">
+
+                            <!-- serial num of the song -->
+                            <div class="as-2-song-sr-no"><b>08</b></div>
+
+                            <!-- song icon and play button-->
+                            <div class="as-2-song-images">
+
+                                <!-- song icon -->
+                                <img class="as-2-song-icon" src="images/playlist/8.jpg">
+
+                            </div>
+
+                            <!-- song and singer name -->
+                            <div class="as-2-song-details">
+                                <div><b>Midnight</b></div>
+                                <div>Katty</div>
+                            </div>
+
+                            <!-- icons for marking the song as favourite or adding it to the favourite-->
+                            <div class="as-2-song-heart">
+                                <img src="images/icons/heart.svg" style="width:20px">
+                            </div>
+
+                        </div>
+                    </div>     
+                </div>
+            </aside>
+        </main>
+        <!-- main part ends here -->
+
+        <!-- last part ....play bar starts here  -->
+        <footer class="play-bar">
+
+            <!-- song img and name -->
+            <div class="pb-img-name">
+
+                <!-- song image -->
+                <img class="pb-in-image" src="images/footer/play.jpg">
+
+                <!-- song details -->
+                <div class="pb-in-name"><b>Aankh Marey</b><br>Simmba</div>
+
+                <!-- icon to mark the song as favourite  -->
+                <div class="pb-in-heart">
+                    <img src="images/footer/heart.svg">
+                    <img src="images/footer/no-entry.svg">
+                </div>
+            </div>
+
+            <!-- pause button ....to pause the song and seek baar of the song  -->
+            <div class="pb-song-play">
+
+                <!-- pause.....next ....previous....suffle and repeat button  -->
+                <div class="pb-sp-icons">
+                    <img src="images/footer/shuffle.svg">
+                    <img src="images/footer/previous.svg">
+                    <img src="images/footer/pause.svg">
+                    <img src="images/footer/fast-forward.svg">
+                    <img src="images/footer/repeat-button.svg">
+                </div>
+
+                <!-- seek bar  -->
+                <div class="pb-sp-slider">
+                    <span>1:00</span>
+                    <input type="range" min = "0" max="100" value="0">
+                    <span>5:00</span>
+                </div>
+            </div>
+
+            <!-- zoom and sound controller -->
+            <div class="pb-song-play pb-playlist-zoom"  style="width: 20%">
+                <div class="pb-sp-icons" style="width: 100%">
+                    <img src="images/footer/playlist.svg">
+                    <img src="images/footer/laptop.svg">
+                    <img src="images/footer/diagonal-arrow.svg">
+                </div>
+
+                <!-- sound controller of the song -->
+                <div class="pb-sp-slider">
+                    <img src="images/footer/megaphone.svg" style="width: 20px">
+                    <input type="range" min = "0" max="100" value="0">
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,644 @@
+
+/* background image of the music player */
+body {
+    background-image: url(images/backgrounds/2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Top-Most section  [Navigation Bar] */
+
+.nav-bar {
+    width: 100%;
+    height: 10vh;
+    box-sizing: border-box;
+    margin-bottom: 1vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    background: linear-gradient(180deg, black, transparent);
+}
+
+
+/* container containing both music player name and icon */
+.nv-icon-name {
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+/* music player icon */
+.nv-icon {
+    width: 100%;
+}
+
+/* favourite container */
+.nv-fav {
+    width: auto;
+    font-size: larger;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* search bar within the navigation section */
+.nv-search-bar {
+    position: relative;
+    width: 25vw;
+    height: 2vw;
+    min-width: 85px;
+    min-height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*2 icons .....magnifier and microphone icon within the search bar */
+.nv-sb-icon-1, .nv-sb-icon-2{
+    position: absolute;
+    width: 20px;
+}
+
+/* magnifier icon within the search bar */
+.nv-sb-icon-1 {
+    left: 8%;
+}
+
+/* microphone icon within the search bar */
+.nv-sb-icon-2 {
+    right:8%;
+}
+
+/* input tag of the serach bar container */
+.nv-search-bar input {
+    width: 90%;
+    height: 100%;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.1vw;
+}
+
+/* Notification bell and profile icon */
+.nv-bell-profile {
+    width: 16vw;
+    min-width: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* image of notification bell and profile icon */
+.nv-bell-profile img {
+    width: 20%;
+}
+
+/* MARKS THE END OF HEADER PART ------------------------------------------------------ */
+
+
+/* Main section...MIDDLE PART---------------------------------------- */
+
+/* main content */
+.main-content {
+    width: 100%;
+    height: 80vh;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* main section left side....[Latest Section]  ASIDE 1*/
+
+.aside-1 {
+    width: 69%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+/* details about band */
+.as-1-band-details {
+    width: 98%;
+    height: 25vw;
+    max-height: 320px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative; 
+    background: linear-gradient(45deg,#b9d0d0 50%, transparent);
+}
+
+/* gradient above the band icon */
+.as-1-bd-icon-color {
+    position: absolute;
+    width: 25vw;
+    max-width: 320px;
+    height: 100%;
+    background: linear-gradient(0deg, #2c64a9 5%, transparent);
+}
+
+
+/* band icon */
+.as-1-bd-icon {
+    width: 25vw;
+    max-width: 320px;
+    height: 100%;
+}
+
+
+/* band description */
+.as-1-bd-desc {
+    margin-left: 4%;
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* all details under band description */
+.as-1-bd-desc > div {
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+/* band name */
+.as-1-bd-d-name {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6vw
+}
+
+/* band name and number of albums and tracks*/
+.as-1-bd-d-details, .as-1-bd-d-albums {
+    font-size: 1.3vw;
+    font-family: ui-rounded none;
+}
+
+
+/* play all and follow buttons */
+.as-1-bd-d-buttons button {
+    display: inline-block;
+    width: 10vw;
+    height: 3vw;
+    max-width: 87px;
+    max-height: 30px;
+    font-size: 1vw;
+    min-width: 40px;
+    min-height: 12px;
+}
+
+/* aside-1 songs section */
+
+
+.as-1-song{
+    box-sizing: border-box;
+    width: 98%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 12px;
+    background: linear-gradient(45deg,#0f6d6d 50%, transparent);
+}
+
+/*serial number of the song */
+.as-1-song-sr-no {
+    width: 27px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    font-size: large;
+}
+
+/* song image containers */
+.as-1-song-images {
+    width: 70px;
+    height: 70px;
+    position: relative;
+}
+
+/*song icons */
+.as-1-song-icon {
+    width: 100%;
+    height: 100%;
+}
+
+/* on hover over song container box shadow appears..*/
+.as-1-song:hover {
+    box-shadow: 0px 0px 2px 3px black;
+    
+} 
+
+
+/*song details */
+.as-1-song-details {
+    width: 33%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* song favourite and add icons */
+.as-1-song-heart-add {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* main section ...[Playlist Button] */
+
+.aside-2-button {
+    position: absolute;
+    width: 110px;
+    height: 32px;
+    right: 0px;
+    top: 8%;
+    visibility: hidden;
+    z-index: 4;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    font-weight: bolder;
+    background: linear-gradient(45deg, black, teal,black,transparent);
+}
+
+/* hidding the checkbox that appears ..when input type is set to checkbox */
+#as-2-button {
+    visibility: hidden;
+}
+
+/*main section right side....[Playlist]...ASIDE ---2 */
+
+.aside-2 {
+    display: inline-block;
+    position: absolute;
+    width: 28%;
+    height: 100%;
+    right: 0px;
+    box-sizing: border-box;
+}
+
+/* aside 2 similar artists section */
+.as-2-sa {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+}
+
+/* all the sections inside similar artists section */
+.as-2-sa > div{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* similar artists heading */
+.as-2-heading {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.as-2-heading div {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+/* play button of the song ... */
+.as-2-sa-s-play-button {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: rgba(215, 224, 230,0.3); 
+}
+
+
+
+/* on hover opacity of play button is updated to 1 */
+.as-2-sa-s-play-button:hover {
+    opacity: 1;
+}
+
+/* song icon */
+.as-2-sa-s-icon {
+    width: 100px;
+    height: 100px;
+}
+
+/* song details */
+.as-2-sa-s-details {
+    width: 45%;
+}
+/* song duration  */
+.as-2-sa-s-drop-time {
+    width:50px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+/*recently played section......*/
+
+.as-2-rp-songs {
+    box-sizing: border-box;
+    width: 100%;
+    height: 30vh;
+    overflow-y: scroll;
+}
+
+
+/* aside-2  recently played songs */
+
+.as-2-rp-song{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 12px;
+    background: linear-gradient(45deg,#0f6d6d 50%, transparent);
+}
+
+/*serial number of the song */
+.as-2-song-sr-no {
+    width: 25px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: large;
+}
+
+/* song image containers */
+.as-2-song-images {
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+/*song icons */
+.as-2-song-icon {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*song details */
+.as-2-song-details {
+    width: 33%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* song favourite and add icons */
+.as-2-song-heart {
+    width: 25px;
+    height: 25px;
+}
+
+
+
+
+
+/*---------------------END OF MIDDLE SECTION-----------------------*/
+
+/* Last section......[Song Play Bar]...footer */
+
+/* play bar(footer main container)..... */
+.play-bar {
+    width: 100%;
+    height: 9vh;
+    position: fixed;
+    top: 91vh;
+    right: 0px;
+    box-sizing: border-box;
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: linear-gradient(0deg, black, grey 100%, transparent);
+}
+
+
+/* footer is divided into 3 parts.....pb-img-name ...first part....pb-song-play ...middle part...and pb-playlist-zoom ..which is last part */
+
+/*fisrt and last part of the footer*/
+.pb-img-name, .pb-playlist-zoom  {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* song image  */
+.pb-in-image {
+    width: 58px;
+    height: 58px;
+}
+
+/* song name */
+.pb-in-name {
+    text-align: center;
+}
+
+/* heart icon....to mark it favourite */
+.pb-in-heart img{
+    width: 20px;
+}
+
+/* play bar that is in the middle of the footer */
+.pb-song-play {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* play bar icons container. */
+.pb-sp-icons {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+}
+
+/* play bar icons */
+.pb-sp-icons img {
+    width: 25px;
+}
+
+/* play bar seeker or slider */
+.pb-sp-slider {
+    width: 100%;
+    display: flex;
+}
+
+
+/* input tag of type range...which is slider */
+.pb-sp-slider input{
+    width: 100%;
+}
+
+/* -----------------END OF FOOTER SECTION------------------ */
+
+
+/*RESPONSIVE PART */
+/* changed some of the properties...to attain the flexibility in responsiveness..when site is opened in different devices with different pixels.... */
+
+
+/* Device having resolution below 1000px */
+@media screen and (max-width: 1000px) {
+
+    /*initial arrangement part*/
+    /*aside 1 of the main content ...middle part*/
+    .aside-1 {
+        width: 100%;
+        position: absolute;
+        margin-right: 0px;
+    }
+
+
+    /* singer details section /// topmost section in aside 1 */
+
+    .as-1-bd-d-name {
+        font-size: 2vw;
+    }
+    
+    .as-1-bd-d-details, .as-1-bd-d-albums {
+        font-size: 1.7vw;
+        font-weight: 550;
+    }
+
+    /*buttons in the singer details section in aside 1 */
+
+    .as-1-bd-d-buttons button {
+
+        font-size: 1.4vw;
+
+    }
+
+     /*aside 2 of the main content ...middle part*/
+    .aside-2 {
+        position: absolute;
+        width: 75vw;
+        height: 67vh;
+        overflow: scroll;
+        visibility: hidden;
+        background-color: honeydew;
+        z-index: 10;
+    }
+
+    /*aside 2 button of the main content ...middle part..which is used to open then the aside 2 part...*/
+    .aside-2-button {
+        visibility: visible;
+    }
+
+    /*aside 2 is turned to visible when aside-2-button is checked */
+    input[id="as-2-button"]:checked ~ .aside-2 {
+        visibility: visible;
+        top: 16%;
+    }
+
+    /*removing the scroller from recently played songs and applying the scroller to whole aside-2 section */
+    .as-2-rp-songs {
+        overflow-y: visible;
+    }
+
+    /* adding scroller to aside - 2 section */
+    .aside-2 {
+        overflow-y: scroll;
+    }
+}
+
+/* Device having resolution below 619px */
+
+@media screen and (max-width: 619px) {
+
+    /*header section fav font size */
+
+    .nv-fav {
+        font-size: 13px;
+    }
+
+}
+
+/* Device having resolution below 550px */
+
+@media screen and (max-width: 550px) {
+
+    /*header section music player name and icon */
+
+    .nv-icon {
+        width: 70%;
+    }
+
+    /*music player name and icon main container*/
+    .nv-icon-name {
+        justify-content: flex-start;
+        font-size: 12px;
+    }
+
+    /*footer section song name */
+    
+    .pb-in-name {
+        position: absolute;
+        visibility: hidden;
+    }
+}
+
+/* Device having resolution below 400px */
+
+@media screen and (max-width: 400px) {
+
+    /* icons inide the footer middle section */
+    .pb-sp-icons img {
+        width: 15px;
+    }
+}
+
+/* hidding the aside 1 scroller */
+.aside-1::-webkit-scrollbar {
+    display: none;
+}
+
+/* hidding the aside 2 scroller */
+.aside-2::-webkit-scrollbar {
+    display: none;
+}
+
+/*hidding the recently played section scroller */
+.as-2-rp-songs::-webkit-scrollbar {
+    display: none;
+}
